@@ -1,0 +1,10 @@
+/*
+ Theme Name:   Someones Son
+ Description:  Bones Child Theme
+ Template:     bones
+ Version:      1.0.0
+ Text Domain:  someones-son
+*/
+@import url("../bones/library/css/style.css");
+
+.header {background:#000}
