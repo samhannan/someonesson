@@ -26,6 +26,8 @@
 			<span class="twitter"></span>
 		</div>
 	</div>
+	
+
 	<div id="home-banner" class="row">
 		<div id="banner-nav">
 			<div class="btn active" id="slide1" data-item="0"></div>
