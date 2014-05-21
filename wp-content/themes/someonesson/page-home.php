@@ -96,34 +96,34 @@ get_header();
 <p class="larger">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 <div id="home-nav-box">
-<div id="" class="row thirteen columns">
-	<div class="item three columns alpha" id="maps">
-		<div class="img"></div>
-		<h2 class="sans">Maps</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-		<a class="btn-round">For Cyclists<i></i></a>
-		<a class="btn-round">For Motorcyclists<i></i></a>
+	<div id="" class="row thirteen columns">
+		<div class="item three columns alpha" id="maps">
+			<div class="img"></div>
+			<h2 class="sans">Maps</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			<a class="btn-round">For Cyclists<i></i></a>
+			<a class="btn-round">For Motorcyclists<i></i></a>
+		</div>
+		<div class="item three columns" id="guides">
+			<div class="img"></div>
+			<h2 class="sans">Guides</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			<a class="btn-round">For Cyclists</a>
+			<a class="btn-round">For Motorcyclists<i></i></a>
+		</div>
+		<div class="item three columns" id="events">
+			<div class="img"></div>
+			<h2 class="sans">Events</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			<a class="btn-round">View Events<i></i></a>
+		</div>
+		<div class="item three columns omega" id="app">
+			<div class="img"></div>
+			<h2 class="sans">App</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			<a class="btn-round">For Cyclists<i></i></a>
+		</div>
 	</div>
-	<div class="item three columns" id="guides">
-		<div class="img"></div>
-		<h2 class="sans">Guides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-		<a class="btn-round">For Cyclists</a>
-		<a class="btn-round">For Motorcyclists<i></i></a>
-	</div>
-	<div class="item three columns" id="events">
-		<div class="img"></div>
-		<h2 class="sans">Events</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-		<a class="btn-round">View Events<i></i></a>
-	</div>
-	<div class="item three columns omega" id="app">
-		<div class="img"></div>
-		<h2 class="sans">App</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-		<a class="btn-round">For Cyclists<i></i></a>
-	</div>
-</div>
 </div>
 
 <?php get_footer(); ?>

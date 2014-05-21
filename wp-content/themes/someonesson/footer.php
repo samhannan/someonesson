@@ -11,6 +11,7 @@
 <div id="footer">
 	<div id="twitter" class="row">
 		<div class="twitter-icon"></div>
+		<div class="clear"></div>
 		<a href="">Someones Son</a> lorem ipsum</a>
 	</div>
 	<div class="clear"></div>
