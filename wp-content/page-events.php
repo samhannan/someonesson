@@ -5,7 +5,7 @@ Template Name: Home
 get_header();
 
 while(have_posts()): the_post(); ?>
-	<div class="row events" id="page-head">
+	<div class="row events" id="banner-head">
 		<div class="quote"></div>
 		<h1 class="sans">Tour de France</h1>
 		<p>covers 390km of Yorkshire's roads</p>

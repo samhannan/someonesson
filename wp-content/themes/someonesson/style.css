@@ -56,6 +56,7 @@ a , a:hover, a:visited {text-decoration:none}
 .arrow-right-white {background:url(assets/img/icon/arrow-right-white.png) center right no-repeat; width:5px; height:8px; display:inline-block; margin-left:7px}
 .outer {overflow:auto;  display:inline-block;}
 .center-align-wrap {width:82%; margin:0 auto}
+.no-fill {background:transparent !important;}
 
 /* header */
 #header {background:#252525; margin-bottom:0}
@@ -132,23 +133,43 @@ a , a:hover, a:visited {text-decoration:none}
 
 /* main page template */
 #content-head {text-align:center; margin:30px 0}
-#central-content {background:#f6f6f6; padding:10px 10px 50px 10px}
+#central-content {background:#f6f6f6; padding:10px 10px 50px 10px; border-top:1px solid #e9e9e9}
 #central-content .intro {width:70%; text-align:center; margin:-10px auto 30px auto}
 #central-content .inner  {width:82%; margin: auto; background:#fff; min-height:500px; border:9px solid #e9e9e9}
-#central-content  .central-divide {height:73px; width:73px;}
-#central-content  .central-divide.bulb {background:url(assets/img/head-divide-bulb.png) no-repeat; margin:0 auto; position:relative; top:-42px}
+.central-divide {height:73px; width:73px; margin:0 auto; position:relative; top:-42px}
+.central-divide.campaign {background:url(assets/img/head-divide-campaign.png) no-repeat; }
+.central-divide.events {background:url(assets/img/head-divide-events.png) no-repeat; }
+.central-divide.links {background:url(assets/img/head-divide-links.png) no-repeat; }
+.central-divide.cyclists {background:url(assets/img/head-divide-cyclists.png) no-repeat; }
 #bottom-content .bottom-box {margin:50px 0; border:10px solid #e9e9e9;  padding-top:0; text-align:center; width:350px; height:169px}
 #bottom-content .bottom-box:last-child {float:right}
 #bottom-content .bottom-box h2 {color:#fff; font-size:23px; margin-top:40px}
 #bottom-content .bottom-box .read-more {color:#fff; margin-top:58px; display:block}
 #bottom-content .bottom-box.motorcycle {background:url(assets/img/bottom-box-motorcycle.png) no-repeat;}
 #bottom-content .bottom-box.cyclist {background:url(assets/img/bottom-box-cyclist.png) no-repeat;}
-#banner-head {background-repeat:no-repeat; background-size:cover; height:272px; padding:40px 0 0 60px}
-#banner-head.events {background-image:url(assets/img/page-head/events.png); }
-#banner-head.campaign {background-image:url(assets/img/page-head/campaign.png); }
-#banner-head  h1 {color:#fff; font-size:3.7em; margin:23px 0 3px 0}
-#banner-head  p {font-size:1.8em; width:410px; line-height:130%; color:#fff}
-#banner-head .quote {background:url(assets/img/banner-quote.png) no-repeat; width:51px; height:42px; position:relative; top:10px;}
+#bottom-content .bottom-box.events {background:url(assets/img/bottom-box-events.png) no-repeat;}
+#page-head {background-repeat:no-repeat; background-size:cover; height:272px; padding:40px 0 0 60px}
+#page-head.events {background-image:url(assets/img/page-head/events.png); }
+#page-head.campaign {background-image:url(assets/img/page-head/campaign.png); }
+#page-head.links {background-image:url(assets/img/page-head/links.png); }
+#page-head.cyclists {background-image:url(assets/img/page-head/cyclists.png); }
+#page-head  h1 {color:#fff; font-size:3.7em; margin:23px 0 3px 0}
+#page-head  p {font-size:1.8em; width:410px; line-height:130%; color:#fff}
+#page-head .quote {background:url(assets/img/banner-quote.png) no-repeat; width:51px; height:42px; position:relative; top:10px;}
+
+/* tabbed page template */
+#tabbed #content-head {margin-bottom:0; padding-bottom:0}
+#tabbed #content-head .grey-line {border-bottom:1px solid #e9e9e9; position:relative; top:28px}
+#tabbed #content-head .central-divide {margin-top:34px; padding:0 30px; background-color:#fff; background-position:center center;}
+#tabbed #central-content {padding-top:50px}
+#tabbed .tab-container {margin:0; padding:0; text-align:center}
+#tabbed .tab-container ul {margin:0; padding:0; display:inline-block}
+#tabbed .tab-container ul li {display:inline-block; margin:0}
+#tabbed .tab-container ul li a{position:relative; top:1px; padding:5px 15px; display:block; background:#fff; -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+#tabbed .tab-container ul li.active a,
+#tabbed .tab-container ul li a:hover  {background:#f6f6f6; border:1px solid #e9e9e9; border-bottom:1px solid #f6f6f6}
+#central-content .block-item {display:inline-block; text-align:center; width:43%; margin:38px 0 0 32px;}
+#central-content .block-item .div {border-top:1px solid #e9e9e9; border-bottom:1px solid #fff; margin:0 0 10px 0}
 
 /* footer */
 #footer {background:#252525; text-align:center; margin-bottom:20px; padding:10px 0 15px 0}

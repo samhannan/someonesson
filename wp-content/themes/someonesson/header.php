@@ -27,7 +27,7 @@
 			'theme_location' => 'primary',
 			'container_class' => 'seven columns offset-by-three',
 			'container_id' => 'nav')); 
-		?>		
+		?>
 		<div id="navsocial" class="two columns">
 			<span class="fb"></span>
 			<span class="twitter"></span>
