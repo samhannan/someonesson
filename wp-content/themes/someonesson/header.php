@@ -25,7 +25,7 @@
 		<div class="logo four columns"></div>
 		<?php wp_nav_menu( array( 
 			'theme_location' => 'primary',
-			'container_class' => 'seven columns offset-by-three',
+			'container_class' => 'eight columns offset-by-three',
 			'container_id' => 'nav')); 
 		?>
 		<div id="navsocial" class="two columns">

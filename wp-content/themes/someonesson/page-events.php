@@ -16,11 +16,12 @@ while(have_posts()): the_post(); ?>
 	<div class="row=" id="central-content">
 		<div class="central-divide events"></div>
 		<div class="intro">
-			<?php the_field('intro'); ?>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.</p>
+			<?php the_content(); ?>
 		</div>
 		<div class="inner">
-			Events inner content
+			<div id="calendar-container">
+				<iframe src="https://www.google.com/calendar/embed?showTitle=0&src=urbancyclingguide%40gmail.com&ctz=Europe/London" style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+			</div>
 		</div>
 	</div>
 	<div class="row center-align-wrap" id="bottom-content">

@@ -39,7 +39,6 @@ and Blueprint http://www.blueprintcss.org/
     src: url('assets/fonts/MuseoSans_500.otf');
 }
 
-
 /* global */
 html {margin:0 !important; padding:0}
 body, p, h1, h2, h3 {font-family:Museo300; color:#666666;}
@@ -60,9 +59,10 @@ a , a:hover, a:visited {text-decoration:none}
 
 /* header */
 #header {background:#252525; margin-bottom:0}
-#header #nav {margin:13px 0 10px 0}
-#header #nav ul li {float:left; margin:0 10px; padding:0;}
+#header #nav {margin:13px 0 0 0}
+#header #nav ul li {float:left; margin:0 10px; padding:0; height:29px}
 #header #nav ul li a {color:#fff}
+#header #nav ul li.current-menu-item {border-bottom:2px solid #ffc000}
 #header .logo {background:url(assets/img/global/logo.png) no-repeat !important; height:22px; width:127px; border-bottom:2px solid #ffc000; padding-bottom:10px; margin-top:10px}
 #header #navsocial {margin:7px 0 0 0}
 #header #navsocial .twitter {background:url(assets/img/icon/twitter.png) no-repeat; height:29px; width:29px; display:inline-block}
@@ -134,13 +134,14 @@ a , a:hover, a:visited {text-decoration:none}
 /* main page template */
 #content-head {text-align:center; margin:30px 0}
 #central-content {background:#f6f6f6; padding:10px 10px 50px 10px; border-top:1px solid #e9e9e9}
-#central-content .intro {width:70%; text-align:center; margin:-10px auto 30px auto}
-#central-content .inner  {width:82%; margin: auto; background:#fff; min-height:500px; border:9px solid #e9e9e9}
+#central-content .intro {width:70%; text-align:center; margin:-10px auto 30px auto;}
+#central-content .inner  {width:76%; margin: auto; background:#fff; min-height:500px; border:10px solid #e9e9e9; padding:30px}
 .central-divide {height:73px; width:73px; margin:0 auto; position:relative; top:-42px}
 .central-divide.campaign {background:url(assets/img/head-divide-campaign.png) no-repeat; }
 .central-divide.events {background:url(assets/img/head-divide-events.png) no-repeat; }
 .central-divide.links {background:url(assets/img/head-divide-links.png) no-repeat; }
 .central-divide.cyclists {background:url(assets/img/head-divide-cyclists.png) no-repeat; }
+.central-divide.motorcycle {background:url(assets/img/head-divide-motorcycle.png) no-repeat; }
 #bottom-content .bottom-box {margin:50px 0; border:10px solid #e9e9e9;  padding-top:0; text-align:center; width:350px; height:169px}
 #bottom-content .bottom-box:last-child {float:right}
 #bottom-content .bottom-box h2 {color:#fff; font-size:23px; margin-top:40px}
@@ -153,6 +154,7 @@ a , a:hover, a:visited {text-decoration:none}
 #page-head.campaign {background-image:url(assets/img/page-head/campaign.png); }
 #page-head.links {background-image:url(assets/img/page-head/links.png); }
 #page-head.cyclists {background-image:url(assets/img/page-head/cyclists.png); }
+#page-head.motorcycle {background-image:url(assets/img/page-head/motorcycle.png); }
 #page-head  h1 {color:#fff; font-size:3.7em; margin:23px 0 3px 0}
 #page-head  p {font-size:1.8em; width:410px; line-height:130%; color:#fff}
 #page-head .quote {background:url(assets/img/banner-quote.png) no-repeat; width:51px; height:42px; position:relative; top:10px;}
@@ -162,14 +164,34 @@ a , a:hover, a:visited {text-decoration:none}
 #tabbed #content-head .grey-line {border-bottom:1px solid #e9e9e9; position:relative; top:28px}
 #tabbed #content-head .central-divide {margin-top:34px; padding:0 30px; background-color:#fff; background-position:center center;}
 #tabbed #central-content {padding-top:50px}
+#tabbed #central-content .inner {padding-bottom:40px}
 #tabbed .tab-container {margin:0; padding:0; text-align:center}
 #tabbed .tab-container ul {margin:0; padding:0; display:inline-block}
 #tabbed .tab-container ul li {display:inline-block; margin:0}
 #tabbed .tab-container ul li a{position:relative; top:1px; padding:5px 15px; display:block; background:#fff; -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
 #tabbed .tab-container ul li.active a,
 #tabbed .tab-container ul li a:hover  {background:#f6f6f6; border:1px solid #e9e9e9; border-bottom:1px solid #f6f6f6}
-#central-content .block-item {display:inline-block; text-align:center; width:43%; margin:38px 0 0 32px;}
+#central-content .block-item {display:inline-block; text-align:center; width:46%; margin:20px 0 0 17px; padding:45px 0 0 0}
+#central-content .block-item.margin {margin-top:35px}
+#central-content .block-item.three-col {margin:0 0 0 19px; width:29%;}
+#central-content .block-item.three-col h2 {font-size:1.6em}
+#central-content .block-item.three-col.margin {margin-top:30px}
 #central-content .block-item .div {border-top:1px solid #e9e9e9; border-bottom:1px solid #fff; margin:0 0 10px 0}
+#central-content .block-item .btn-round {width:125px;}
+#central-content .block-item.accident {background:url(assets/img/cyclist-central-accident.png) top center no-repeat;}
+#central-content .block-item.hgv {background:url(assets/img/cyclist-central-hgv.png) top center no-repeat;}
+#central-content .block-item.commuter {background:url(assets/img/cyclist-central-commuter.png) top center no-repeat;}
+#central-content .block-item.safety {background:url(assets/img/cyclist-central-safety.png) top center no-repeat;}
+#central-content .block-item.motorcycle_accident {background:url(assets/img/motorcycle-central-accident.png) top center no-repeat;}
+#central-content .block-item.motorcycle_campaigns {background:url(assets/img/motorcycle-central-campaigns.png) top center no-repeat;}
+#central-content .block-item.motorcycle_spot {background:url(assets/img/motorcycle-central-spot.png) top center no-repeat;}
+#central-content .block-item.motorcycle_drivers {background:url(assets/img/motorcycle-central-drivers.png) top center no-repeat;}
+#central-content .block-item.motorcycle_tyresafe {background:url(assets/img/motorcycle-central-tyresafe.png) top center no-repeat;}
+#central-content .block-item.motorcycle_commuter {background:url(assets/img/motorcycle-central-commuter.png) top center no-repeat;}
+
+/* other page styles */
+#calendar-container {width:700px; height:500px; margin:20px auto;}
+#map-container {height:450px}
 
 /* footer */
 #footer {background:#252525; text-align:center; margin-bottom:20px; padding:10px 0 15px 0}

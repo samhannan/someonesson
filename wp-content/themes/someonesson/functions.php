@@ -94,7 +94,8 @@ function someonesson_scripts() {
 	wp_enqueue_script( 'someonesson-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206' );
 	wp_enqueue_script( 'someonesson-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115' );
 	wp_enqueue_script( 'someonesson-script', get_template_directory_uri() . '/assets/js/script.js', array(), '20120206');
-		
+	wp_deregister_style( 'open-sans' );	
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -130,3 +131,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Obtains page slug
+ */
+function getSlug() {
+	global $post;
+	return basename(get_permalink($post->ID));
+}

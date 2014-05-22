@@ -17,10 +17,9 @@ while(have_posts()): the_post(); ?>
 		<div class="central-divide campaign"></div>
 		<div class="intro">
 			<?php the_field('intro'); ?>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.</p>
 		</div>
 		<div class="inner">
-			Campaign inner content
+			<?php the_content(); ?>
 		</div>
 	</div>
 	<div class="row center-align-wrap" id="bottom-content">

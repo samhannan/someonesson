@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home
+Template Name: Tabbed Page - Cyclists
 */
 get_header();
 
@@ -17,41 +17,16 @@ while(have_posts()): the_post(); ?>
 			<div class="central-divide cyclists"></div>
 		</div>
 		<div class="tab-container row">
-			<ul>
-				<li class="active"><a href="">Cyclists</a></li>
-				<li><a href="">Accident Map</a></li>
-				<li><a href="">HGV Blind Spot</a></li>
-				<li><a href="">Commuter Guide</a></li>
-				<li><a href="">Safety Equipment</a></li>
-			</ul>
+			<?php get_template_part('content', 'tabs-cyclist'); ?>
 		</div>
 		<div class="row" id="central-content">
-			<div class="inner no-fill">
-				<div class="block-item accident">
-					<h2 class="sans">Accident Map</h2>
-					<div class="div"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-					<a class="btn-round">Read More<i></i></a>
+			<?php if(file_exists(get_template_directory() . '/content-cyclists-' . basename(get_permalink()) . '.php')) :
+				get_template_part('content-cyclists', basename(get_permalink())); 
+			else: ?>
+				<div class="inner">
+					<?php the_content(); ?>
 				</div>
-				<div class="block-item accident">
-					<h2 class="sans">Accident Map</h2>
-					<div class="div"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-					<a class="btn-round">Read More<i></i></a>
-				</div>
-				<div class="block-item accident">
-					<h2 class="sans">Accident Map</h2>
-					<div class="div"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-					<a class="btn-round">Read More<i></i></a>
-				</div>
-				<div class="block-item accident">
-					<h2 class="sans">Accident Map</h2>
-					<div class="div"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-					<a class="btn-round">Read More<i></i></a>
-				</div>
-			</div>
+			<?php endif; ?>
 		</div>
 		<div class="row center-align-wrap" id="bottom-content">
 			<?php get_template_part('content', 'bottom-motorcyclist'); ?>
