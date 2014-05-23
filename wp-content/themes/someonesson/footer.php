@@ -17,41 +17,22 @@
 	<div class="clear"></div>
 	<div class="div"></div>
 	<div class="outer">
-		<div id="links" class="row ten columns">
-			<div class="two columns alpha">
+		<div id="links" class="row twelve columns">
+			<div class="three columns alpha">
 				<h2 class="sans">The Campaign</h2>
-				<ul>
-					<li>Link</li>
-					<li>Link</li>
-				</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer_1',)); ?>
 			</div>
-			<div class="two columns">
-				<h2 class="sans">Events</h2>
-				<ul>
-					<li>Link</li>
-					<li>Link</li>
-				</ul>
+			<div class="three columns">
+				<h2 class="sans">Drivers</h2>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer_2',)); ?>
 			</div>
-			<div class="two columns">
+			<div class="three columns">
 				<h2 class="sans">Motorcyclists</h2>
-				<ul>
-					<li>Link</li>
-					<li>Link</li>
-				</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer_3',)); ?>
 			</div>
-			<div class="two columns">
+			<div class="three columns omega">
 				<h2 class="sans">Cyclists</h2>
-				<ul>
-					<li>Link</li>
-					<li>Link</li>
-				</ul>
-			</div>
-			<div class="two columns omega">
-				<h2 class="sans">Useful Links</h2>
-				<ul>
-					<li>Link</li>
-					<li>Link</li>
-				</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer_4',)); ?>
 			</div>
 		</div>
 	</div>

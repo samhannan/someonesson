@@ -90,7 +90,7 @@ get_header();
 </div>
 <div id="home-mission-arrow" class="row"></div>
 <div id="home-lower">
-<h1 class="sans">Maps, Apps &amp; More!</h1>
+<h1 class="sans">Maps, &amp; Much More!</h1>
 <div class="grey-line"></div>
 <div class="home-div-icon"></div>
 <p class="larger">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -106,10 +106,10 @@ get_header();
 		</div>
 		<div class="item three columns" id="guides">
 			<div class="img"></div>
-			<h2 class="sans">Guides</h2>
+			<h2 class="sans">Drivers Guides</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-			<a class="btn-round">For Cyclists</a>
-			<a class="btn-round">For Motorcyclists<i></i></a>
+			<a class="btn-round">Guide to Cyclists</a>
+			<a class="btn-round">Guide to Motorcyclists<i></i></a>
 		</div>
 		<div class="item three columns" id="events">
 			<div class="img"></div>
@@ -119,7 +119,7 @@ get_header();
 		</div>
 		<div class="item three columns omega" id="app">
 			<div class="img"></div>
-			<h2 class="sans">App</h2>
+			<h2 class="sans">Downloads</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 			<a class="btn-round">For Cyclists<i></i></a>
 		</div>

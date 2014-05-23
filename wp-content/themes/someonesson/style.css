@@ -53,18 +53,18 @@ a , a:hover, a:visited {text-decoration:none}
 .btn-round:hover {color:inherit; background:#ececec;transition:.2s;}
 .btn-round i {background:url(assets/img/icon/arrow-right.png) center right no-repeat; width:5px; height:8px; display:inline-block; margin-left:7px}
 .arrow-right-white {background:url(assets/img/icon/arrow-right-white.png) center right no-repeat; width:5px; height:8px; display:inline-block; margin-left:7px}
-.outer {overflow:auto;  display:inline-block;}
+.outer {overflow:auto; display:inline-block;}
 .center-align-wrap {width:82%; margin:0 auto}
 .no-fill {background:transparent !important;}
 
 /* header */
 #header {background:#252525; margin-bottom:0}
-#header #nav {margin:13px 0 0 0}
+#header #nav {margin:13px 0 0 125px; width:586; float:left;}
 #header #nav ul li {float:left; margin:0 10px; padding:0; height:29px}
 #header #nav ul li a {color:#fff}
 #header #nav ul li.current-menu-item {border-bottom:2px solid #ffc000}
-#header .logo {background:url(assets/img/global/logo.png) no-repeat !important; height:22px; width:127px; border-bottom:2px solid #ffc000; padding-bottom:10px; margin-top:10px}
-#header #navsocial {margin:7px 0 0 0}
+#header .logo {background:url(assets/img/global/logo.png) no-repeat !important; height:22px; width:127px; border-bottom:2px solid #ffc000; padding-bottom:10px; margin:10px 0 0 67px; float:left}
+#header #navsocial {margin:7px 0 0 0; float:right}
 #header #navsocial .twitter {background:url(assets/img/icon/twitter.png) no-repeat; height:29px; width:29px; display:inline-block}
 #header #navsocial .fb {background:url(assets/img/icon/fb.png) no-repeat; height:29px; width:29px; display:inline-block; margin:0 5px 0 0}
 
@@ -124,12 +124,13 @@ a , a:hover, a:visited {text-decoration:none}
 /* home bottom nav box */
 #home-nav-box {background:#f8f8f8; overflow:auto; text-align:center; border:10px solid #ececec; width:82%; margin:0 auto 20px auto; padding:20px 0 10px 0}
 #home-nav-box .item {text-align:center; margin:0 15px}
+#home-nav-box .item  h2 {font-size:1.7em}
 #home-nav-box .item .img  {margin:0 auto; height:130px; width:120px; background-position:center center; background-color:#f8f8f8; background-repeat:no-repeat}
 #home-nav-box .item#maps .img {background-image:url(assets/img/home-bottom-maps.png); }
 #home-nav-box .item#guides .img {background-image:url(assets/img/home-bottom-guides.png) ; }
 #home-nav-box .item#events .img {background-image:url(assets/img/home-bottom-events.png); }
 #home-nav-box .item#app .img {background-image:url(assets/img/home-bottom-app.png);}
-#home-nav-box  .btn-round {margin:0 0 7px 0; width:135px}
+#home-nav-box  .btn-round {margin:0 0 7px 0; width:153px; position:relative; left:-10px}
 
 /* main page template */
 #content-head {text-align:center; margin:30px 0}
@@ -199,9 +200,10 @@ a , a:hover, a:visited {text-decoration:none}
 #footer #twitter a {color:#ffc000}
 #footer #twitter .twitter-icon {background:url(assets/img/icon/twitter-dark.png) no-repeat; width:29px; height:29px; display:inline-block }
 #footer #links {}
-#footer .div {border-top: 2px solid #FFC000;margin: 0 auto;position: relative;top: 40px;width: 65%;}
+#footer .div {border-top: 2px solid #FFC000;margin: 0 auto;position: relative;top: 40px;width: 82%;}
 #footer #links h2 {color:#fff; font-size:1em;}
-#footer #links ul li {color:#adadad; margin-bottom:3px; font-size:0.8em}
+#footer #links ul li {margin-bottom:5px;}
+#footer #links ul li a{color:#adadad; font-size:0.9em}
 #footer #bottom {overflow:auto; border-top:1px solid #3b3b3b; padding-top:15px; width:82%; margin:0 auto}
 #footer #bottom .logo {background:url(assets/img/global/logo.png) no-repeat !important;height:22px; width:127px; float:left;}
 #footer #bottom .right {float:right;} 

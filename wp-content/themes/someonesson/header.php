@@ -21,11 +21,11 @@
 
 <body <?php body_class(); ?>>
 <div id="wrap" class="container">
-	<header id="header" class="row offset-by-one">
-		<div class="logo four columns"></div>
+	<header id="header" class="row">
+		<a href="/"><div class="logo four columns"></div></a>
 		<?php wp_nav_menu( array( 
 			'theme_location' => 'primary',
-			'container_class' => 'eight columns offset-by-three',
+			'container_class' => '',
 			'container_id' => 'nav')); 
 		?>
 		<div id="navsocial" class="two columns">

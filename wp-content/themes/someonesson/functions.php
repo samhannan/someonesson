@@ -43,6 +43,10 @@ function someonesson_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'someonesson' ),
+		'footer_1' => __( 'Footer 1', 'someonesson' ),
+		'footer_2' => __( 'Footer 2', 'someonesson' ),
+		'footer_3' => __( 'Footer 3', 'someonesson' ),
+		'footer_4' => __( 'Footer 4', 'someonesson' ),
 	) );
 
 	// Enable support for Post Formats.
